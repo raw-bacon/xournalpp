@@ -51,7 +51,7 @@ Xournal++ features:
 - Eraser with multiple configurations
 - Significantly reduced memory usage and code to detect memory leaks compared to Xournal
 - LaTeX support (requires a working LaTeX install)
-- bug reporting, auto-save, and auto backup tools
+- Bug reporting, auto-save, and auto backup tools
 - Customizable toolbar, with multiple configurations, e.g. to optimize toolbar for portrait / landscape
 - Page Template definitions
 - Shape drawing (line, arrow, circle, rect, splines)
@@ -59,7 +59,7 @@ Xournal++ features:
 - Rotation snapping every 15 degrees
 - Rect snapping to grid
 - Audio recording and playback alongside with handwritten notes
-- Multi Language Support, Like English, German (Deutsch), Italian (Italiano)...
+- Multi Language Support, like English, German (Deutsch), Italian (Italiano)...
 - Plugins using Lua scripting
 
 ## Mobile & web app
@@ -329,11 +329,11 @@ page](https://github.com/xournalpp/xournalpp/releases).
 
 ## File format
 
-The file format _.xopp is an XML which is .gz compressed. PDFs are not embedded into the file, so if the PDF is deleted, the background is lost. _.xopp is basically the same file format as _.xoj, which is used by Xournal. Therefor Xournal++ reads _.xoj files, and can also export _.xoj. On exporting to _.xoj all Xournal++ specific Extension are lost, like additional Background types.
+The file format \_.xopp is an XML which is .gz compressed. PDFs are not embedded into the file, so if the PDF is deleted, the background is lost. \_.xopp is basically the same file format as \_.xoj, which is used by Xournal. Therefore Xournal++ reads \_.xoj files, and can also export \_.xoj. On exporting to \_.xoj all Xournal++ specific Extension are lost, like additional Background types.
 
-\*.xopp can theoretically be read by Xournal, as long as you do not use any new feature, Xournal does not open files at all if there are new attributes or unknown values, because of this Xournal++ will add the extension .xopp to all saved files.
+\_.xopp can theoretically be read by Xournal, as long as you do not use any new feature, Xournal does not open files at all if there are new attributes or unknown values, because of this Xournal++ will add the extension .xopp to all saved files.
 
-All new files will be saved as _.xopp, if an _.xoj file is opened which was created by Xournal, the Save-As dialog will be displayed on save. If the \*.xoj file was by Xournal++ created, Xournal++ overwrite the file on save, and does not change the extension.
+All new files will be saved as \_.xopp, if an \_.xoj file is opened which was created by Xournal, the Save-As dialog will be displayed on save. If the \*.xoj file was by Xournal++ created, Xournal++ overwrite the file on save, and does not change the extension.
 
 **We are currently introducing a new file format that can efficiently store attached PDF files and other attachments internally. We will still allow for attachments that are linked to external files. Please refer to [#937](https://github.com/xournalpp/xournalpp/issues/937) for further details.**
 
